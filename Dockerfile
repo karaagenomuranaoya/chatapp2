@@ -16,3 +16,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 
 # アプリケーションの起動コマンド
 CMD ["java", "-jar", "app.jar"]
+
