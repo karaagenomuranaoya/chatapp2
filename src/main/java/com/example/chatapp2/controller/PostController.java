@@ -22,14 +22,14 @@ public class PostController {
     @GetMapping
     public String getAllPosts(Model model) {
         model.addAttribute("posts", postService.getAllPosts());
-        return "posts";
+        return "index";
     }
     
     @PostMapping
     public String savePost(@ModelAttribute Post post) {
         postService.savePost(post);
         
-        return "redirect:/posts";
+        return "redirect:/index";
     }
 
     @GetMapping("/new")
